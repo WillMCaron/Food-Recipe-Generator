@@ -1,0 +1,399 @@
+<html>
+<head>
+<link rel="stylesheet" href='/static/admin.css' />
+<title>List Test</title>
+</head>
+<!-- Could add more recipes, would require new wordscrape file-->
+<body>
+<style>
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+
+<table width= 800>
+  <tr>
+<td width = 50%>
+    <h1>Admin Side</h1>
+  <h4>Enter as many ingredients as you can, using the supplied items.
+    You have to enter salt, pepper, flour if you want to use them.
+    Be as vague or specific as you please, being more specific will
+    increase the accuracy of your results.</h4>
+<form action = "" method='POST'>
+  <datalist id="mylist">
+    <option value="pork">
+    <option value="cooking oil">
+    <option value="oil spray">
+    <option value="pork loin">
+    <option value="paprika">
+    <option value="smoked paprika">
+    <option value="salt">
+    <option value="black pepper">
+    <option value="pepper">
+    <option value="onion">
+    <option value="onion powder">
+    <option value="garlic">
+    <option value="granulated garlic">
+    <option value="cayenne pepper">
+    <option value="pasta">
+    <option value="spaghetti">
+    <option value="oil">
+    <option value="olive oil">
+    <option value="cheese">
+    <option value="Pecorino Romano cheese">
+    <option value="boneless pork loin">
+    <option value="cooking spray">
+    <option value="mustard">
+    <option value="Dijon mustard">
+    <option value="honey">
+    <option value="vinegar">
+    <option value="balsamic vinegar">
+    <option value="salmon">
+    <option value="chicken thighs">
+    <option value="mushrooms">
+    <option value="baby bella mushrooms">
+    <option value="chicken broth">
+    <option value="wine">
+    <option value="white wine">
+    <option value="sherry">
+    <option value="dry sherry">
+    <option value="yogurt">
+    <option value="Greek yogurt">
+    <option value="dill">
+    <option value="butter">
+    <option value="unsalted butter">
+    <option value="flour">
+    <option value="all-purpose flour">
+    <option value="pork sausage">
+    <option value="beets">
+    <option value="carrots">
+    <option value="potatoes">
+    <option value="baking potatoes">
+    <option value="vegetable oil">
+    <option value="tomato paste">
+    <option value="water">
+    <option value="cabbage">
+    <option value="tomato">
+    <option value="diced tomatoes">
+    <option value="sugar">
+    <option value="white sugar">
+    <option value="sour cream">
+    <option value="parsley">
+    <option value="chicken breast">
+    <option value="chicken">
+    <option value="barbeque sauce">
+    <option value="hamburger buns">
+    <option value="buns">
+    <option value="tomato sauce">
+    <option value="yellow onion">
+    <option value="chicken bouillon">
+    <option value="oregano">
+    <option value="beef">
+    <option value="ground beef">
+    <option value="egg">
+    <option value="eggs">
+    <option value="rice">
+    <option value="white rice">
+    <option value="cilantro">
+    <option value="seasoned salt">
+    <option value="garlic powder">
+    <option value="cumin">
+    <option value="potato">
+    <option value="baby potato">
+    <option value="celery">
+    <option value="zucchini">
+    <option value="green cabbage">
+    <option value="lemon">
+    <option value="avocado">
+    <option value="cherry tomatoes">
+    <option value="pizza crust">
+    <option value="mozzarella">
+    <option value="pizza sauce">
+    <option value="red onion">
+    <option value="pepperoni">
+    <option value="Italian seasoning">
+    <option value="red pepper flakes">
+    <option value="garlic salt">
+    <option value="bread">
+    <option value="mushroom">
+    <option value="almond">
+    <option value="swiss cheese">
+    <option value="sausage">
+    <option value="italian sausage">
+    <option value="crushed tomatoes">
+    <option value="basil">
+    <option value="fennel seeds">
+    <option value="lasagna noodles">
+    <option value="noodles">
+    <option value="ricotta">
+    <option value="Parmesan">
+    <option value="beef rump">
+    <option value="beef rump roast">
+    <option value="pork loin roast">
+    <option value="enchilada sauce">
+    <option value="green enchilada sauce">
+    <option value="chiles">
+    <option value="green chiles">
+    <option value="diced green chiles">
+    <option value="macaroni">
+    <option value="elbow macaroni">
+    <option value="pork shoulder">
+    <option value="pork shoulder roast">
+    <option value="apple cider vinegar">
+    <option value="brown sugar">
+    <option value="light brown sugar">
+    <option value="yellow mustard">
+    <option value="worcestershire sauce">
+    <option value="chili powder">
+    <option value="milk">
+    <option value="cheddar">
+    <option value="bread crumbs">
+    <option value="paprika">
+    <option value="beef stock">
+    <option value="heavy cream">
+    <option value="soy sauce">
+    <option value="rosemary">
+    <option value="meatballs">
+    <option value="mayonnaise">
+    <option value="green onion">
+    <option value="buttermilk">
+    <option value="biscuits">
+    <option value="buttermilk biscuits">
+    <option value="boneless chicken breast">
+    <option value="italian salad dressing">
+    <option value="lemon pepper">
+    <option value="spinach">
+    <option value="cream cheese">
+    <option value="chives">
+    <option value="provolone">
+    <option value="russet potato">
+    <option value="egg noodles">
+    <option value="peas">
+    <option value="green peas">
+    <option value="tuna">
+    <option value="cream of mushroom soup">
+    <option value="potato chips">
+    <option value="chips">
+    <option value="sesame oil">
+    <option value="sesame seeds">
+    <option value="skinless chicken breasts">
+    <option value="celery seed">
+    <option value="pie crust">
+    <option value="unbaked pie crust">
+    <option value="red potatoes">
+    <option value="cream of chicken soup">
+    <option value="cream of celery soup">
+    <option value="condensed cream of mushroom soup">
+    <option value="tater tots">
+    <option value="portobello mushrooms">
+    <option value="white mushrooms">
+    <option value="shallots">
+    <option value="arborio rice">
+    <option value="dry white wine">
+    <option value="bell pepper">
+    <option value="green bell pepper">
+    <option value="broccoli">
+    <option value="broccoli florets">
+    <option value="sharp cheddar cheese">
+    <option value="sweet onion">
+    <option value="beef broth">
+    <option value="boneless pork loin roast">
+    <option value="fettuccini">
+    <option value="dashi">
+    <option value="dashi granules">
+    <option value="miso paste">
+    <option value="tofu">
+    <option value="silken tofu">
+    <option value="dry mustard">
+    <option value="hot pepper sauce">
+    <option value="whole milk">
+    <option value="beer">
+    <option value="corn">
+    <option value="whole kernel corn">
+    <option value="beans">
+    <option value="black beans">
+    <option value="peanut oil">
+    <option value="cajun seasoning">
+    <option value="andouille sausage">
+    <option value="crushed italian tomatoes">
+    <option value="file powder">
+    <option value="red bell pepper">
+    <option value="lime">
+    <option value="lime juice">
+    <option value="salsa">
+    <option value="breadcrumbs">
+    <option value="seasoned breadcrumbs">
+    <option value="italian seasoned breadcrumbs">
+    <option value="parmigiano reggiano cheese">
+    <option value="radishes">
+    <option value="arugula">
+    <option value="blue cheese">
+    <option value="vegetable stock">
+    <option value="hoisin sauce">
+    <option value="quinoa">
+    <option value="avocado">
+    <option value="shrimp">
+    <option value="bagel">
+    <option value="everything bagel">
+    <option value="hard-cooked egg">
+    <option value="canola oil">
+    <option value="olives">
+    <option value="black olives">
+    <option value="wonton wrappers">
+    <option value="chicken drumsticks">
+    <option value="orange marmalade">
+    <option value="rice vinegar">
+    <option value="yogurt">
+    <option value="banana">
+    <option value="graham cracker">
+    <option value="chicken nuggets">
+    <option value="barbecue sauce">
+    <option value="barbecue seasoning">
+    <option value="barbecue">
+    <option value="clams">
+    <option value="beets">
+    <option value="scallion">
+    <option value="cojita cheese">
+    <option value="hot sauce">
+    <option value="extra virgin olive oil">
+    <option value="tortillas">
+    <option value="pulled pork">
+    <option value="baking powder">
+    <option value="sockeye salmon">
+    <option value="ginger">
+    <option value="marinade">
+    <option value="teriyaki marinade">
+    <option value="spring onion">
+    <option value="brussel sprouts">
+    <option value="dark sesame oil">
+    <option value="granulated sugar">
+    <option value="sake">
+    <option value="lettuce">
+    <option value="celery rib">
+    <option value="red sweet bell pepper">
+    <option value="sweet bell pepper">
+    <option value="buffalo wing sauce">
+    <option value="wing sauce">
+    <option value="vinaigrette">
+    <option value="pappardelle">
+    <option value="noodles">
+    <option value="sirloin">
+    <option value="slider rolls">
+    <option value="rolls">
+    <option value="balsamic">
+    <option value="balsamic glaze">
+    <option value="cauliflower">
+    <option value="couscous">
+    <option value="blueberries">
+    <option value="feta">
+    <option value="pretzel buns">
+    <option value="red onions">
+    <option value="ham">
+    <option value="sweet hungarian paprika">
+    <option value="chili powder">
+    <option value="bacon">
+    <option value="cornstarch">
+    <option value="small shells">
+    <option value="rib celery">
+    <option value="chicken tenders">
+    <option value="baguette">
+    <option value="provolone">
+    <option value="shaved beef">
+    <option value="kaiser rolls">
+    <option value="garlic salt">
+    <option value="roast beef">
+    <option value="hot banana peppers">
+    <option value="dressing">
+    <option value="flour tortillas">
+    <option value="cranberry">
+    <option value="cranberry sauce">
+    <option value="jalapeno">
+    <option value="honey mustard">
+    <option value="salad">
+    <option value="lentils">
+    <option value="brown lentils">
+    <option value="bay leaf">
+    <option value="red wine vinegar">
+    <option value="agave nectar">
+    <option value="hass avacado">
+    <option value="sriracha">
+    <option value="rotisserie chicken">
+    <option value="gorgonzola">
+    <option value="gouda">
+    <option value="aritichoke">
+    <option value="artichoke hearts">
+    <option value="crushed red pepper">
+    <option value="pasta">
+    <option value="cucumbers">
+    <option value="edamame">
+    <option value="snow peas">
+    <option value="butternut squash">
+    <option value="nutmeg">
+    <option value="penne pasta">
+    <option value="meat sauce">
+    <option value="bolognese">
+    <option value="vodka">
+    <option value="ground mustard">
+    <option value="baby greens">
+    <option value="chicken tenders">
+    <option value="tumeric">
+    <option value="puff pastry">
+    <option value="cinnamon">
+    <option value="cinnamon sugar">
+    <option value="raisins">
+    <option value="walnuts">
+    <option value="powdered sugar">
+    <option value="teriyaki glaze">
+    <option value="marinara">
+    <option value="yellow bell pepper">
+    <option value="corn tortillas">
+    <option value="refried beans">
+    <option value="red enchiladas sauce">
+    <option value="chicken bouillon">
+    <option value="kale">
+    <option value="prosciutto">
+    <option value="pinto beans">
+    <option value="queso blanco">
+    <option value="hot salsa">
+    <option value="garlic scape">
+    <option value="oats">
+    <option value="rolled oats">
+    <option value="garlic marinara">
+    <option value="baby spinach">
+    <option value="">
+    <option value="">
+  </datalist>  
+    <label for="values">Ingredient:</label>
+    <input type="text" list = "mylist" name="values" required>
+    <br>
+    
+    <input type="submit" name = "submit" value="submit">
+</form>
+<form action = "" method = 'POST'>
+    <input type="submit" name = "submit" value="reset">
+</form>
+<form action = "" method = 'POST'>
+    <input type="submit" name = "submit" value="cont">
+</form>
+<a href="/admin">Reload</a>
+<a href="/login">Go Back</a> 
+<a href="/final">Final</a>
+</td>
+<td width = 10%><br></br></td>
+<td><h1> </h1></td>
+<td>
+
+<h2>Current Ingredients:</h2>
+<p white-space: pre-line;>{{ stuff|safe }}</p>
+</td>
+  </tr>
+</table>
+</body>
+</html>
